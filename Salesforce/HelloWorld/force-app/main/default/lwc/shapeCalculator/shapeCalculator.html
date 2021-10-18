@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="To FInd the value of the Shape">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" padding="around_medium">
+                <lightning-input type="number" label="Enter the sides" onchange={sideHandler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around_medium">
+                <lightning-input type="number" label="Enter the Length" onchange={lengthHandler} ></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around_medium">
+                <lightning-input type="number" label="Enter the Breadth" onchange={breadthHandler} ></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around_medium">
+                <lightning-input type="number" label="Enter the Daignol 1" onchange={d1Handler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around_medium">
+                <lightning-input type="number" label="Enter the Daignol 2" onchange={d2Handler} ></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around_medium">
+                <lightning-button label="Area of Square" icon-position="center" onclick={squareHandler} ></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around_medium">
+                <lightning-button label="Area of rectangle" icon-position="center" onclick={rectangleHandler} ></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around_medium">
+                <lightning-button label="Area of Rombus" icon-position="center" onclick={rombusHandler} ></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around_medium">
+                <lightning-formatted-text value={currentOutput}></lightning-formatted-text>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

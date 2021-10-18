@@ -1,0 +1,8 @@
+.it-first{
+border-top: 5px solid red ;
+padding-top: 5px;
+}
+.it-last{
+ border-bottom:  5px solid green;
+ padding-bottom: 5px;
+}
