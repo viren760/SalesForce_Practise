@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Employee Details">
+      <div class="slds-m-around-medium">
+          <div if:true={something}>Boolean : True</div>
+          <div if:false={something}>Boolean : False</div>
+        <h2> Employee Id : {id}</h2>
+          <h2> Employee Name : {name}</h2>
+          <h2> Employee Profile : {profile}</h2>
+          <h2>Employee Speciality :{speciality}</h2>
+          <lightning-input label ="Enter your Id" value={id} onchange={idHandler}>
+        </lightning-input>
+          <lightning-input label ="Enter your Name" value={name} onchange={nameHandler}>
+          </lightning-input>
+          <lightning-input label ="Enter your Profile" value={profile} onchange={profileHandler}>
+        </lightning-input>
+        <lightning-input label ="Enter your Speciality" value={speciality} onchange={specialityHandler}>
+        </lightning-input>
+      </div>
+    </lightning-card>
+</template>
