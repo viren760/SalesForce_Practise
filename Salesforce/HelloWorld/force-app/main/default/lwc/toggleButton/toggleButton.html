@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="toggle Button" icon-name="custom:custom13">
+     <div class="slds-m-around_medium">
+         <button class="slds-button slds-button_brand" onclick={changeHandler}> Toggle Button</button>
+     </div>
+     <template if:true={toggleText}>
+        <h1> My Name is Virender Negi </h1>
+     </template>
+    </lightning-card>
+</template>

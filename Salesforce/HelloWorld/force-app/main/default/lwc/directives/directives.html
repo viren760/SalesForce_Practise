@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Directives" icon-name="custom:custom18">
+        <div class="slds-m-around_medium">
+            <button class="slds-button slds-button_success" onclick={changeHandler} > Click Me</button>
+            <button class="slds-button slds-button_destructive" onclick={deleteHandler} > Hide Me</button>
+            <template if:true={boolean}> 
+           <h1>My Name is Virender Negi!!</h1>
+            </template>            
+        </div>        
+    </lightning-card>
+</template>

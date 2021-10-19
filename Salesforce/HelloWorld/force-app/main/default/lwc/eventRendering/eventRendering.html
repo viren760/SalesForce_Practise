@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Event Rendering" icon-name="custom:custom23">
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" value={inputText} onkeyup={eventHandler}>
+
+            </lightning-input>
+        </div>
+        <div class="slds-m-around_medium">
+            <template if:true={text}>
+                <h1> My name is Viren Negi</h1>
+            </template>
+        </div>
+    </lightning-card>
+</template>
