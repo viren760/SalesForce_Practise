@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Passing Data to child on action at parent" icon-name="custom:custom20">
+      <div class="slds-m-around_medium">
+          <label> Enter your percentage :</label>
+          <lightning-input type="number" value={percentage} onkeyup={changeHandler} name="percentage"></lightning-input>
+      </div>
+      <div class="slds-m-around_medium">
+          <c-child-progress-bar percentage={percentage}></c-child-progress-bar>
+      </div>
+    </lightning-card>
+</template>

@@ -7,6 +7,6 @@ export default class Directives extends LightningElement {
     }
 
     deleteHandler(event){
-        this.boolean= false;
+        this.boolean= false;    
     }
 }

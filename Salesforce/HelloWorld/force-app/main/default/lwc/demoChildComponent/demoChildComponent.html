@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Child Component" icon-name="custom:custom15">
+        <template for:each={userDetails} for:item="user">
+        <ol class="slds-m-around_medium" key={user.name}>
+          <li>{user.name}</li>
+          <li>{user.profile}</li>
+          <li>{user.address}</li>
+        </ol>   
+        </template>
+    </lightning-card>
+</template>
