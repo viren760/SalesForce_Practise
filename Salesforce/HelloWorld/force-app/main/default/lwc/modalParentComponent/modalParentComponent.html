@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Modal" icon-name="custom:custom19">
+        <div class="slds-m-around_medium">
+            <button class="slds-button slds-button_success" onclick={ShowModal} >Open Modal</button>
+            <template if:true={showText}>
+                <c-modal-child-component header-text="This is a Message !!" body-text="hey Welcome to the Child modal !!" onclose={modalCloseHandler} >
+                </c-modal-child-component>    
+            </template>
+        </div>
+    </lightning-card>
+</template>
