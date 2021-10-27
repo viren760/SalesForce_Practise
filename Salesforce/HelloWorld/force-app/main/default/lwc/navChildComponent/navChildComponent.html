@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="child component" icon-name="custom:custom20">
+        <div class="slds-m-around_medium">
+            <template for:each={playerList} for:item="player">
+               <div key={player.id} value={player.name} onclick={changeSelection}>
+                  {player.name} 
+               </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

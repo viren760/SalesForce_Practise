@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Parent Component" icon-name="custom:custom24">
+        <div class="slds-m-around_medium">
+           <h1>Choose your fav Crickter</h1>
+        </div>
+        <div class="flex">
+            <h1>I'm a Parent Component</h1>
+            <c-nav-child-component player-list={playerList} onselection={selectPlayer}>
+            
+            </c-nav-child-component>
+        </div>
+        <div class="slds-m-around_medium">
+            <template if:true={selectedPlayers} for:each={playerList} for:item="player">
+               <ol key={player.id}>
+                  <li>{player.id}</li>
+                  <li>{player.name}</li>
+                  <li>{player.country}</li>
+                  <li>{player.ipl}</li>
+               </ol>
+            </template>
+        </div>
+    </lightning-card>
+</template>

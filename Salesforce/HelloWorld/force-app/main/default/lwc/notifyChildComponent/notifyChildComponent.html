@@ -1,0 +1,14 @@
+<template>
+    <div>
+        <div>
+           <span>
+              Notification in child component . Event bubbled till parent element in same component 
+           </span>
+        </div>
+        <div class="content" onclick={childHandler}>
+            <button class="btn" onclick={showNotifyParentHandler}>
+               Click me to send notification to parent component using event bubbling
+            </button>
+        </div>
+    </div>
+</template>
